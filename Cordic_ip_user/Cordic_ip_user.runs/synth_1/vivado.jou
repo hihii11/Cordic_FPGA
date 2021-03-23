@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 22 22:00:33 2021
+# Process ID: 6952
+# Current directory: D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.runs/synth_1
+# Command line: vivado.exe -log Cordic_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cordic_wrapper.tcl
+# Log file: D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.runs/synth_1/Cordic_wrapper.vds
+# Journal file: D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Cordic_wrapper.tcl -notrace

@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic
+INFO: [VRFC 10-311] analyzing module cordic_line
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/Cordic/Cordic.srcs/sim_1/new/Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test

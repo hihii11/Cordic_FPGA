@@ -1,0 +1,230 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Mar 22 22:04:56 2021
+| Host         : DESKTOP-P7K6OD1 running 64-bit major release  (build 9200)
+| Command      : report_drc -file Cordic_wrapper_drc_routed.rpt -pb Cordic_wrapper_drc_routed.pb -rpx Cordic_wrapper_drc_routed.rpx
+| Design       : Cordic_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 38
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| BUFC-1      | Warning  | Input Buffer Connections                                    | 2          |
+| PDRC-153    | Warning  | Gated clock check                                           | 34         |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer ja_pin1_iobuf/IBUF (in ja_pin1_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer ja_pin4_iobuf/IBUF (in ja_pin4_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_0 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[31]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[31]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_12 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[27]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[27]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_15 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[26]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[26]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_18 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[25]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[25]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_21 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[24]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[24]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_24 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[23]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[23]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_27 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[22]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[22]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_3 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[30]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[30]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_30 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[21]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[21]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_33 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[20]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[20]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_36 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[19]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[19]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_39 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[18]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[18]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_42 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[17]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[17]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_45 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[16]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[16]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_48 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[15]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_51 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[14]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_54 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[13]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_57 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[12]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_6 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[29]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[29]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_60 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[11]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_63 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[10]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_66 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[9]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_69 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[8]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_72 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[7]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_75 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[6]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_78 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[5]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_81 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[4]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_84 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[3]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_87 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[2]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_9 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[28]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[28]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_90 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[1]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/slv_reg0_reg[0]_93 is a gated clock net sourced by a combinational pin Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[0]_LDC_i_1/O, cell Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net Cordic_i/key_shake_0/inst/key_out is a gated clock net sourced by a combinational pin Cordic_i/key_shake_0/inst/key_out__0/O, cell Cordic_i/key_shake_0/inst/key_out__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net Cordic_i/key_shake_1/inst/key_out is a gated clock net sourced by a combinational pin Cordic_i/key_shake_1/inst/key_out__0/O, cell Cordic_i/key_shake_1/inst/key_out__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Cordic_i/key_shake_0/inst/key_out__0 is driving clock pin of 32 cells. This could lead to large hold time violations. Involved cells are:
+Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[0], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[10], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[11], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[12], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[13], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[14], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[15], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[16], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[17], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[18], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[19], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[1], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[20], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[21], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[22] (the first 15 of 32 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Cordic_i/key_shake_1/inst/key_out__0 is driving clock pin of 641 cells. This could lead to large hold time violations. Involved cells are:
+Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/AB/dir_reg, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[0]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[0]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[10]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[10]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[11]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[11]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[12]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[12]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[13]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[13]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[14]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[14]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[15]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[15]_P (the first 15 of 641 listed)
+Related violations: <none>
+
+

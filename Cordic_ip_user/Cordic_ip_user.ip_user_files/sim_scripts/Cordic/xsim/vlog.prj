@@ -1,0 +1,21 @@
+verilog xil_defaultlib --include "../../../../Cordic_ip_user.srcs/sources_1/bd/Cordic/ipshared/ec67/hdl" --include "../../../../Cordic_ip_user.srcs/sources_1/bd/Cordic/ipshared/70cf/hdl" --include "../../../../Cordic_ip_user.srcs/sources_1/bd/Cordic/ip/Cordic_processing_system7_0_0" \
+"../../../bd/Cordic/ip/Cordic_processing_system7_0_0/sim/Cordic_processing_system7_0_0.v" \
+"../../../bd/Cordic/ipshared/27e7/src/cordic.v" \
+"../../../bd/Cordic/ipshared/27e7/hdl/cordic_v1_0_S0_AXI.v" \
+"../../../bd/Cordic/ipshared/27e7/hdl/cordic_v1_0.v" \
+"../../../bd/Cordic/ip/Cordic_cordic_0_1/sim/Cordic_cordic_0_1.v" \
+"../../../bd/Cordic/ip/Cordic_xbar_0/sim/Cordic_xbar_0.v" \
+"../../../bd/Cordic/ipshared/7615/src/Roate_keyv2.v" \
+"../../../bd/Cordic/ipshared/7615/hdl/Roate_keyv2_v1_0_S0_AXI.v" \
+"../../../bd/Cordic/ipshared/7615/hdl/Roate_keyv2_v1_0.v" \
+"../../../bd/Cordic/ip/Cordic_Roate_keyv2_0_0/sim/Cordic_Roate_keyv2_0_0.v" \
+"../../../../Cordic_ip_user.srcs/sources_1/bd/Cordic/ip/Cordic_PmodOLED_0_0/src/PmodOLED_pmod_bridge_0_0/src/pmod_concat.v" \
+"../../../bd/Cordic/ip/Cordic_PmodOLED_0_0/src/PmodOLED_pmod_bridge_0_0/sim/PmodOLED_pmod_bridge_0_0.v" \
+"../../../../Cordic_ip_user.srcs/sources_1/bd/Cordic/ipshared/0bf9/src/PmodOLED.v" \
+"../../../bd/Cordic/ip/Cordic_PmodOLED_0_0/sim/Cordic_PmodOLED_0_0.v" \
+"../../../bd/Cordic/ip/Cordic_auto_pc_0/sim/Cordic_auto_pc_0.v" \
+"../../../bd/Cordic/sim/Cordic.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

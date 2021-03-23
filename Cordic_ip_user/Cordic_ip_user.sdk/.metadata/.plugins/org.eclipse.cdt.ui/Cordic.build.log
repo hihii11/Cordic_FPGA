@@ -1,0 +1,23 @@
+22:21:55 **** Incremental Build of configuration Debug for project Cordic ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Cordic_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Cordic.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Cordic_bsp/ps7_cortexa9_0/lib -o "Cordic.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Cordic.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Cordic.elf  |tee "Cordic.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75792	   2608	  23424	 101824	  18dc0	Cordic.elf
+'Finished building: Cordic.elf.size'
+' '
+
+22:21:55 Build Finished (took 812ms)
+

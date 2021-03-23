@@ -1,0 +1,31 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto de9a36565a5747e1b121381be62a20f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Test_behav xil_defaultlib.Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 1. Module cordic doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/Cordic/Cordic.srcs/sources_1/new/cordic.v" Line 298. Module cordic_line doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cordic_line
+Compiling module xil_defaultlib.cordic
+Compiling module xil_defaultlib.Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_behav

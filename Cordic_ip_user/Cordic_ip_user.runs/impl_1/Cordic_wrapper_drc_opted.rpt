@@ -1,0 +1,59 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Mar 22 22:04:02 2021
+| Host         : DESKTOP-P7K6OD1 running 64-bit major release  (build 9200)
+| Command      : report_drc -file Cordic_wrapper_drc_opted.rpt -pb Cordic_wrapper_drc_opted.pb -rpx Cordic_wrapper_drc_opted.rpx
+| Design       : Cordic_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 4
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| BUFC-1      | Warning  | Input Buffer Connections                                    | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer ja_pin1_iobuf/IBUF (in ja_pin1_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer ja_pin4_iobuf/IBUF (in ja_pin4_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Cordic_i/key_shake_0/inst/key_out__0 is driving clock pin of 32 cells. This could lead to large hold time violations. Involved cells are:
+Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[0], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[10], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[11], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[12], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[13], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[14], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[15], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[16], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[17], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[18], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[19], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[1], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[20], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[21], Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/SW_reg_reg[22] (the first 15 of 32 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Cordic_i/key_shake_1/inst/key_out__0 is driving clock pin of 641 cells. This could lead to large hold time violations. Involved cells are:
+Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/AB/dir_reg, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[0]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[0]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[10]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[10]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[11]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[11]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[12]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[12]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[13]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[13]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[14]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[14]_P, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[15]_C, Cordic_i/Roate_keyv2_0/inst/Roate_keyv2_v1_0_S0_AXI_inst/KEY/C0/data_reg[15]_P (the first 15 of 641 listed)
+Related violations: <none>
+
+

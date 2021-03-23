@@ -1,0 +1,147 @@
+22:06:10 INFO  : Registering command handlers for SDK TCF services
+22:06:12 INFO  : Launching XSCT server: xsct.bat -interactive D:\Vivado\project\Cordic_ip_user\Cordic_ip_user.sdk\temp_xsdb_launch_script.tcl
+22:06:16 INFO  : XSCT server has started successfully.
+22:06:18 INFO  : Successfully done setting XSCT server connection channel  
+22:06:18 INFO  : Successfully done setting SDK workspace  
+22:06:18 INFO  : Restoring global repository preferences: 
+		 V:\vivado\Arm_sw_repository
+22:06:18 WARN  : Invalid repository path V:\vivado\Arm_sw_repository.
+22:06:18 INFO  : Processing command line option -hwspec D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper.hdf.
+22:10:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:10:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA" && level==0} -index 1' command is executed.
+22:10:47 INFO  : FPGA configured successfully with bitstream "D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/Cordic_wrapper.bit"
+22:11:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA" && level==0} -index 1' command is executed.
+22:11:17 INFO  : 'fpga -state' command is executed.
+22:11:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:11:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB738CA' is selected.
+22:11:18 INFO  : 'jtag frequency' command is executed.
+22:11:18 INFO  : Sourcing of 'D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:11:18 INFO  : Context for 'APU' is selected.
+22:11:18 INFO  : Hardware design information is loaded from 'D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/system.hdf'.
+22:11:18 INFO  : 'configparams force-mem-access 1' command is executed.
+22:11:18 INFO  : Context for 'APU' is selected.
+22:11:18 INFO  : 'stop' command is executed.
+22:11:18 INFO  : 'ps7_init' command is executed.
+22:11:18 INFO  : 'ps7_post_config' command is executed.
+22:11:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:11:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:11:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:11:19 INFO  : The application 'D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic/Debug/Cordic.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:11:19 INFO  : 'configparams force-mem-access 0' command is executed.
+22:11:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+loadhw -hw D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+dow D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic/Debug/Cordic.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:11:19 INFO  : Memory regions updated for context APU
+22:11:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:11:19 INFO  : 'con' command is executed.
+22:11:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+con
+----------------End of Script----------------
+
+22:11:19 INFO  : Launch script is exported to file 'D:\Vivado\project\Cordic_ip_user\Cordic_ip_user.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_cordic.elf_on_local.tcl'
+22:21:25 INFO  : Disconnected from the channel tcfchan#1.
+22:21:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA" && level==0} -index 1' command is executed.
+22:21:26 INFO  : 'fpga -state' command is executed.
+22:21:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:21:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB738CA' is selected.
+22:21:26 INFO  : 'jtag frequency' command is executed.
+22:21:27 INFO  : Sourcing of 'D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:21:27 INFO  : Context for 'APU' is selected.
+22:21:29 INFO  : Hardware design information is loaded from 'D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/system.hdf'.
+22:21:29 INFO  : 'configparams force-mem-access 1' command is executed.
+22:21:29 INFO  : Context for 'APU' is selected.
+22:21:29 INFO  : 'stop' command is executed.
+22:21:29 INFO  : 'ps7_init' command is executed.
+22:21:29 INFO  : 'ps7_post_config' command is executed.
+22:21:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:21:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:21:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:21:29 INFO  : The application 'D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic/Debug/Cordic.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:21:29 INFO  : 'configparams force-mem-access 0' command is executed.
+22:21:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+loadhw -hw D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+dow D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic/Debug/Cordic.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:21:29 INFO  : Memory regions updated for context APU
+22:21:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:21:30 INFO  : 'con' command is executed.
+22:21:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+con
+----------------End of Script----------------
+
+22:21:30 INFO  : Launch script is exported to file 'D:\Vivado\project\Cordic_ip_user\Cordic_ip_user.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_cordic.elf_on_local.tcl'
+22:21:57 INFO  : Disconnected from the channel tcfchan#2.
+22:21:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA" && level==0} -index 1' command is executed.
+22:21:58 INFO  : 'fpga -state' command is executed.
+22:21:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:21:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351AB738CA' is selected.
+22:21:58 INFO  : 'jtag frequency' command is executed.
+22:21:58 INFO  : Sourcing of 'D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:21:58 INFO  : Context for 'APU' is selected.
+22:22:01 INFO  : Hardware design information is loaded from 'D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/system.hdf'.
+22:22:01 INFO  : 'configparams force-mem-access 1' command is executed.
+22:22:01 INFO  : Context for 'APU' is selected.
+22:22:01 INFO  : 'stop' command is executed.
+22:22:01 INFO  : 'ps7_init' command is executed.
+22:22:01 INFO  : 'ps7_post_config' command is executed.
+22:22:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:22:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:22:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:22:02 INFO  : The application 'D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic/Debug/Cordic.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:22:02 INFO  : 'configparams force-mem-access 0' command is executed.
+22:22:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+loadhw -hw D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+dow D:/Vivado/project/Cordic_ip_user/Cordic_ip_user.sdk/Cordic/Debug/Cordic.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:22:02 INFO  : Memory regions updated for context APU
+22:22:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:22:02 INFO  : 'con' command is executed.
+22:22:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351AB738CA"} -index 0
+con
+----------------End of Script----------------
+
+22:22:02 INFO  : Launch script is exported to file 'D:\Vivado\project\Cordic_ip_user\Cordic_ip_user.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_cordic.elf_on_local.tcl'
+22:23:51 INFO  : Disconnected from the channel tcfchan#3.
